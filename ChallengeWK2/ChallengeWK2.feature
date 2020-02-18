@@ -7,28 +7,28 @@
 Scenario: Game Selection 1
 	Given I have entered 1 into the game selector
 	When I press select
-	Then the result should be 1 on the screen
+	Then the result should be Game1
 
 		@game_selection
 Scenario: Game Selection 2
-	Given I have entered 1 into the game selector
+	Given I have entered 2 into the game selector
 	When I press select
-	Then the result should be 2 on the screen
+	Then the result should be Game2 
 
 		@game_selection
 Scenario: Game Selection 3
-	Given I have entered 1 into the game selector
+	Given I have entered 3 into the game selector
 	When I press select
-	Then the result should be 3 on the screen
+	Then the result should be Game3 
 
 		@game_selection
 Scenario: Game Selection 4
 	Given I have entered 4 into the game selector
 	When I press select
-	Then the result should be an error message telling the user that there is no associated game
+	Then the result should be Error
 
 		@game_selection
-Scenario: Game Selection null
-	Given I have entered null into the game selector
+Scenario: Game Selection 0
+	Given I have entered 0 into the game selector
 	When I press select
-	Then the result should be an error message telling the user that there is no associated game
+	Then the result should be Error
