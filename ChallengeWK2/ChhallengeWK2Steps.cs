@@ -29,5 +29,12 @@ namespace ChallengeWK2.Specs
         {
             ScenarioContext.Current.Pending();
         }
+
+        [Then(@"then a message saying ""(.*)"" is returned\.")]
+        public void ThenThenAMessageSayingIsReturned_(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }
