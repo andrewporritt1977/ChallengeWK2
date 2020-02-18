@@ -1,39 +1,34 @@
 ﻿Feature: ChhallengeWK2
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to entertain myself
+	As a game player
+	I want to be able to select the game
 
 	@game_selection
 Scenario: Game Selection 1
-	Given I have opened the the app
-	And I want to play a game 
-	When I enter 1
-	Then then game 1 is loaded
+	Given I have entered 1 into the game selector
+	When I press select
+	Then the result should be 1 on the screen
 
-	@game_selection
+		@game_selection
 Scenario: Game Selection 2
-	Given I have opened the the app
-	And I want to play a game 
-	When I enter 2
-	Then then game 2 is loaded
+	Given I have entered 1 into the game selector
+	When I press select
+	Then the result should be 2 on the screen
 
-	@game_selection
+		@game_selection
 Scenario: Game Selection 3
-	Given I have opened the the app
-	And I want to play a game 
-	When I enter 3
-	Then then game 3 is loaded
+	Given I have entered 1 into the game selector
+	When I press select
+	Then the result should be 3 on the screen
 
-	@game_selection
+		@game_selection
 Scenario: Game Selection 4
-	Given I have opened the the app
-	And I want to play a game 
-	When I enter 4
-	Then then a message saying "Game not available." is returned.
+	Given I have entered 4 into the game selector
+	When I press select
+	Then the result should be an error message telling the user that there is no associated game
 
 		@game_selection
 Scenario: Game Selection null
-	Given I have opened the the app
-	And I want to play a game 
-	When I enter null
-	Then then a message saying "Game not available." is returned.
+	Given I have entered null into the game selector
+	When I press select
+	Then the result should be an error message telling the user that there is no associated game
