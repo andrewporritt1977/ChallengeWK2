@@ -3,9 +3,25 @@
 	As a math idiot
 	I want to be told the sum of two numbers
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+@game_selection
+Scenario: Game Selection 1
+	Given I have opened the the app
+	And I want to play a game 
+	When I enter 1
+	Then then game 1 is loaded
+
+	@game_selection
+Scenario: Game Selection 2
+	Given I have opened the the app
+	And I want to play a game 
+	When I enter 2
+	Then then game 2 is loaded
+
+	@game_selection
+Scenario: Game Selection 3
+	Given I have opened the the app
+	And I want to play a game 
+	When I enter 3
+	Then then game 3 is loaded
+
+
