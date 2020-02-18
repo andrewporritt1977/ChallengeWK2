@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeWK2.Specs", "ChallengeWK2.Specs.csproj", "{BFBFC595-3F23-416D-8584-6EDE250D4992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSelection", "..\GameSelection\GameSelection.csproj", "{081D36DC-CD77-4671-96C6-82E2D930BB48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameSelection", "..\GameSelection\GameSelection.csproj", "{081D36DC-CD77-4671-96C6-82E2D930BB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberPoke", "..\NumberPoke\NumberPoke.csproj", "{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{081D36DC-CD77-4671-96C6-82E2D930BB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{081D36DC-CD77-4671-96C6-82E2D930BB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{081D36DC-CD77-4671-96C6-82E2D930BB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,7 +28,7 @@ namespace ChallengeWK2.Specs
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ChallengeWK2.feature"
+#line 1 "GameSelection.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
