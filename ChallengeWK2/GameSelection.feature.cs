@@ -20,8 +20,8 @@ namespace ChallengeWK2.Specs
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("ChhallengeWK2")]
-    public partial class ChhallengeWK2Feature
+    [NUnit.Framework.DescriptionAttribute("ChallengeWK2")]
+    public partial class ChallengeWK2Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -35,7 +35,7 @@ namespace ChallengeWK2.Specs
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ChhallengeWK2", "\tIn order to entertain myself\r\n\tAs a game player\r\n\tI want to be able to select th" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ChallengeWK2", "\tIn order to entertain myself\r\n\tAs a game player\r\n\tI want to be able to select th" +
                     "e game", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }

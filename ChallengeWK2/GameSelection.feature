@@ -1,4 +1,4 @@
-﻿Feature: ChhallengeWK2
+﻿Feature: ChallengeWK2
 	In order to entertain myself
 	As a game player
 	I want to be able to select the game

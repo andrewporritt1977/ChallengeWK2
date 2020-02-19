@@ -1,12 +1,11 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-using GameSelection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ChallengeWK2.Specs
 {
     [Binding]
-    public class ChallengeWK2Steps
+    public class GameSelectionSteps
     {
         private string game;
 

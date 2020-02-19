@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameSelection", "..\GameSel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberPoke", "..\NumberPoke\NumberPoke.csproj", "{41BF4DB2-6ECD-41B0-BE35-67E58E61C8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighLow", "..\HighLow\HighLow.csproj", "{BAAF0E96-68BE-4B52-8361-E502FCDFC7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighLow", "..\HighLow\HighLow.csproj", "{BAAF0E96-68BE-4B52-8361-E502FCDFC7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJack", "..\BlackJack\BlackJack.csproj", "{450B55D8-D0D4-4B92-84E3-5213806D20D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BAAF0E96-68BE-4B52-8361-E502FCDFC7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAAF0E96-68BE-4B52-8361-E502FCDFC7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAAF0E96-68BE-4B52-8361-E502FCDFC7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450B55D8-D0D4-4B92-84E3-5213806D20D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450B55D8-D0D4-4B92-84E3-5213806D20D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450B55D8-D0D4-4B92-84E3-5213806D20D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450B55D8-D0D4-4B92-84E3-5213806D20D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
