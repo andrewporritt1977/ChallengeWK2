@@ -9,10 +9,6 @@ namespace ChallengeWK2.Specs
     public class NumberPokeSteps
     {
         private string gameResult;
-        private int cardOne;
-        private int cardTwo;
-        private int cardThree;
-        
         private NumberPoke.NumberPoke numberPoke = new NumberPoke.NumberPoke();
 
         [Given(@"my first number is (.*)")]
@@ -48,31 +44,56 @@ namespace ChallengeWK2.Specs
         [Given(@"I press Start")]
         public void GivenIPressStart()
         {
-            cardOne = numberPoke.Deal();
-            cardTwo = numberPoke.Deal();
-            cardThree = numberPoke.Deal();
+            numberPoke.Deal();
         }
 
         [Then(@"my first number is valid")]
         public void ThenMyFirstNumberIsValid()
         {
-            Assert.IsTrue(cardOne > 0);
-            Assert.IsTrue(cardOne < 11);
+            Assert.IsTrue(numberPoke.FirstNumber > 0);
+            Assert.IsTrue(numberPoke.FirstNumber < 11);
         }
 
         [Then(@"my second number is valid")]
         public void ThenMySecondNumberIsValid()
         {
-            Assert.IsTrue(cardTwo > 0);
-            Assert.IsTrue(cardTwo < 11);
+            Assert.IsTrue(numberPoke.SecondNumber > 0);
+            Assert.IsTrue(numberPoke.SecondNumber < 11);
         }
 
 
         [Then(@"my third number is valid")]
         public void ThenMyThirdNumberIsValid()
         {
-            Assert.IsTrue(cardThree > 0);
-            Assert.IsTrue(cardThree < 11);
+            Assert.IsTrue(numberPoke.ThirdNumber > 0);
+            Assert.IsTrue(numberPoke.ThirdNumber < 11);
         }
+
+        [When(@"I press hold on (.*)")]
+        public void WhenIPressHoldOn(int hold)
+        {
+            numberPoke.Hold(hold);
+        }
+
+        [Then(@"only number (.*) is re-dealt")]
+        public void ThenOnlyNumberIsRe_Dealt(int unheld)
+        {
+            numberPoke.Deal();
+            // Assert only unheld is dealt
+        }
+
+        [Then(@"my first number is still (.*)")]
+        public void ThenMyFirstNumberIsStill(int firstNumber)
+        {
+            Assert.AreEqual(numberPoke.FirstNumber, firstNumber);
+        }
+
+
+        [Then(@"my second number is still (.*)")]
+        public void ThenMySecondNumberIsStill(int secondNumber)
+        {
+            Assert.AreEqual(numberPoke.SecondNumber, secondNumber);
+        }
+
     }
 }

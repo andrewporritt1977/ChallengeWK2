@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace NumberPoke
 {
@@ -9,6 +10,12 @@ namespace NumberPoke
         public int SecondNumber { get; set; }
 
         public int ThirdNumber { get; set; }
+
+        public bool heldFirst { get; set; }
+
+        public bool heldSecond { get; set; }
+
+        public bool heldThird { get; set; }
 
         public string GameResult()
         {
@@ -25,11 +32,33 @@ namespace NumberPoke
   
         }
 
-        public int Deal()
+        public void Deal()
         {
             Random r = new Random();
-            return r.Next(1, 10);
+
+            if (!heldFirst) FirstNumber = r.Next(1, 10);
+            if (!heldSecond) SecondNumber = r.Next(1, 10);
+            if (!heldThird) ThirdNumber = r.Next(1, 10);
         }
-   
+
+        public void Hold(int hold)
+        {
+            switch (hold)
+            {
+                case 1:
+                    heldFirst = true;
+                    break;
+                case 2:
+                    heldSecond = true;
+                    break;
+                case 3:
+                    heldThird = true;
+                    break;
+                default:
+                    break;
+
+            }
+        }
+
     }
 }

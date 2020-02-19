@@ -49,3 +49,15 @@ Scenario: At game start I am given 3 random numbers
 	Then my first number is valid
 	And my second number is valid
 	And my third number is valid
+
+	@game_loop
+Scenario: I wish to retain 1 number and re-deal the other 2
+	Given my first number is 9
+	And my second number is 9
+	And and my third number is 8
+	When I press hold on 1
+	And I press hold on 2
+	And I press continue
+	Then my first number is still 9
+	And my second number is still 9
+
