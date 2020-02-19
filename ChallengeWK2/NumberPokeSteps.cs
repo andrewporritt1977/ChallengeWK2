@@ -9,6 +9,9 @@ namespace ChallengeWK2.Specs
     public class NumberPokeSteps
     {
         private string gameResult;
+        private int cardOne;
+        private int cardTwo;
+        private int cardThree;
         
         private NumberPoke.NumberPoke numberPoke = new NumberPoke.NumberPoke();
 
@@ -42,5 +45,34 @@ namespace ChallengeWK2.Specs
             Assert.AreEqual(gameResult, expectedResult);
         }
 
+        [Given(@"I press Start")]
+        public void GivenIPressStart()
+        {
+            cardOne = numberPoke.Deal();
+            cardTwo = numberPoke.Deal();
+            cardThree = numberPoke.Deal();
+        }
+
+        [Then(@"my first number is valid")]
+        public void ThenMyFirstNumberIsValid()
+        {
+            Assert.IsTrue(cardOne > 0);
+            Assert.IsTrue(cardOne < 11);
+        }
+
+        [Then(@"my second number is valid")]
+        public void ThenMySecondNumberIsValid()
+        {
+            Assert.IsTrue(cardTwo > 0);
+            Assert.IsTrue(cardTwo < 11);
+        }
+
+
+        [Then(@"my third number is valid")]
+        public void ThenMyThirdNumberIsValid()
+        {
+            Assert.IsTrue(cardThree > 0);
+            Assert.IsTrue(cardThree < 11);
+        }
     }
 }

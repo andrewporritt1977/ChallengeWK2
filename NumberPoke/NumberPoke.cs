@@ -24,5 +24,12 @@ namespace NumberPoke
             }
   
         }
+
+        public int Deal()
+        {
+            Random r = new Random();
+            return r.Next(1, 10);
+        }
+   
     }
 }
