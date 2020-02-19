@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GameSelection\GameSelection.csproj" />
+    <ProjectReference Include="..\HighLow\HighLow.csproj" />
     <ProjectReference Include="..\NumberPoke\NumberPoke.csproj" />
   </ItemGroup>
 
