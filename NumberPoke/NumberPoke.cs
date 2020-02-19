@@ -11,11 +11,11 @@ namespace NumberPoke
 
         public int ThirdNumber { get; set; }
 
-        public bool heldFirst { get; set; }
+        private bool HeldFirst { get; set; }
 
-        public bool heldSecond { get; set; }
+        private bool HeldSecond { get; set; }
 
-        public bool heldThird { get; set; }
+        private bool HeldThird { get; set; }
 
         public string GameResult()
         {
@@ -36,9 +36,9 @@ namespace NumberPoke
         {
             Random r = new Random();
 
-            if (!heldFirst) FirstNumber = r.Next(1, 10);
-            if (!heldSecond) SecondNumber = r.Next(1, 10);
-            if (!heldThird) ThirdNumber = r.Next(1, 10);
+            if (!HeldFirst) FirstNumber = r.Next(1, 10);
+            if (!HeldSecond) SecondNumber = r.Next(1, 10);
+            if (!HeldThird) ThirdNumber = r.Next(1, 10);
         }
 
         public void Hold(int hold)
@@ -46,13 +46,13 @@ namespace NumberPoke
             switch (hold)
             {
                 case 1:
-                    heldFirst = true;
+                    HeldFirst = true;
                     break;
                 case 2:
-                    heldSecond = true;
+                    HeldSecond = true;
                     break;
                 case 3:
-                    heldThird = true;
+                    HeldThird = true;
                     break;
                 default:
                     break;
