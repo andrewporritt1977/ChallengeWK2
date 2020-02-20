@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlackJack\BlackJack.csproj" />
-    <ProjectReference Include="..\GameSelection\GameSelection.csproj" />
+    <ProjectReference Include="..\GameSelection\Game.csproj" />
     <ProjectReference Include="..\HighLow\HighLow.csproj" />
     <ProjectReference Include="..\NumberPoke\NumberPoke.csproj" />
   </ItemGroup>

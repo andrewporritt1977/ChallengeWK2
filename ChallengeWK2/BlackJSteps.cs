@@ -8,7 +8,7 @@ namespace ChallengeWK2.Specs
     public class BlackJSteps
     {
         Dealer dealer = new Dealer();
-        Human human = new Human();
+        Player human = new Player();
 
         [Given(@"the dealer's stand attribute is (.*)")]
         public void GivenTheDealerSStandAttributeIsTrue(bool stand)

@@ -4,8 +4,14 @@ using System.Text;
 
 namespace BlackJack
 {
-    public class Dealer : Player
+    public class Dealer : Participant
     {
-        public int HiddenCard { get; set; }
+        public Dealer()
+        {
+            Hand = CardDeck.TakeCard();
+            HiddenCard = CardDeck.TakeCard();
+        }
+
+        public int HiddenCard { get; set; } 
     }
 }

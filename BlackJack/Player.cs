@@ -4,14 +4,13 @@ using System.Text;
 
 namespace BlackJack
 {
-    public class Player
+    public class Player : Participant
     {
-        public int Hand { get; set; }
-        public bool Stand { get; set; }
-
-        public void TakeCard()
+        public Player()
         {
-
+            Hand = CardDeck.TakeCard() + CardDeck.TakeCard();
         }
+
+        public bool Win { get; set; }
     }
 }
